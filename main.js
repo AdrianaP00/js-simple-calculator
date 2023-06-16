@@ -9,14 +9,8 @@ do {
     console.log(`====================\n`);
     menuCal = prompt(``);
 
-    switch (menuCal) {
-        case 'x':
-        case '2': stop();
-            break;
-        case '1': calculate();
-            break;
-        default:
-            break;
+    if (menuCal == 1) {
+        calculate();
     }
 } while (menuCal != 'x' && menuCal != '2');
 
